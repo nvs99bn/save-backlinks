@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Save backlinks",
+  "description": "Save the backlinks",
+  "version": "1.0",
+  "icons": {
+    "48": "/images/saveIcon.png"
+  },
+  "action": {
+      "default_icon":{"16":"images/saveIcon.png"},
+      "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab", "scripting", "tabs"],
+  "host_permissions": [
+    "https://openlinkprofiler.org/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://openlinkprofiler.org/*"],
+      "js": ["scripts/autoSave.js"]
+    }
+  ] 
+}
