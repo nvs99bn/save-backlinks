@@ -28,6 +28,7 @@ if (document.getElementsByClassName("page-item active")[0].outerText != 1) {
         a.click();
       };
       download(data.join("\n"));
+      localStorage.removeItem("data");
     }
   }
 }

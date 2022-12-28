@@ -12,7 +12,7 @@
   },
   "permissions": ["activeTab", "scripting", "tabs"],
   "host_permissions": [
-    "https://openlinkprofiler.org/"
+    "https://openlinkprofiler.org/*"
   ],
   "content_scripts": [
     {
